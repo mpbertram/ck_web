@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ChucK Web</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="banner">
+        <span>
+          Unofficial <a href="https://chuck.stanford.edu/">ChucK</a> build for <a href="https://webassembly.org/">WebAssembly</a> based on <a href="https://github.com/mpbertram/chuck">this GitHub repo</a>.
+        </span>
+      </div>
+      <div class="chuck-code-box">
+        <textarea id="chuck-code" class="code-area">
+SinOsc sin => dac;
+440 => sin.freq;
+5::second => now;
+</textarea>
+      </div>
+      <input type="button" value="Run code" onclick="runChuck();" class="run-button">
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="deps/chuck.js"></script>
+  </body>
+</html>

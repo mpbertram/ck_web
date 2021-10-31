@@ -1,0 +1,17 @@
+{
+    "name": "ck-web",
+    "version": "0.1.0",
+    "description": "ChucK powered by WASM",
+    "main": "index.js",
+    "scripts": {
+        "deps": "curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.js -o deps/chuck.js && curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.wasm -o deps/chuck.wasm",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mpbertram/ck_web"
+    }
+}

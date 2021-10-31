@@ -1,0 +1,72 @@
+body {
+    position: absolute;
+    margin: 0 auto;
+    background-color: #181a1b;
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.chuck-code-box {
+    height: 100%;
+}
+
+.banner {
+    width: 100%;
+    background-color: #fff5ee;
+    min-height: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-variant-caps: small-caps;
+    padding-top: 5px;
+}
+
+.code-area {
+    background-color: #181a1b;
+    color: #e8e6e3;
+    width: 95%;
+    height: 95%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.run-button {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    background-color: #20b2aa;
+    font-size: 1.225rem;
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    font-family: auto;
+    color: #181a1b;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+}
+
+.run-button:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.run-button:active {
+    content: "";
+    opacity: .5;
+    transition: 0s
+  }
+  
+.run-button:active:after {
+    opacity: 1;
+    transition: 0s
+}
