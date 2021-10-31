@@ -4,7 +4,7 @@
     "description": "ChucK powered by WASM",
     "main": "index.js",
     "scripts": {
-        "deps": "curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.js -o deps/chuck.js && curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.wasm -o deps/chuck.wasm",
+        "deps": "mkdir -p deps && curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.js -o deps/chuck.js && curl -L https://github.com/mpbertram/chuck/releases/download/v0.0.1/chuck.wasm -o deps/chuck.wasm",
         "start": "node index.js"
     },
     "dependencies": {
